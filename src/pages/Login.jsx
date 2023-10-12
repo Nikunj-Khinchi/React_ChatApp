@@ -37,7 +37,7 @@ const Login = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">Private Chat</span>
+        <span className="logo">React Chat</span>
         <span className="title">Login</span>
         <form action="" onSubmit={handelSubmit}>
           <input type="email" placeholder="email" />

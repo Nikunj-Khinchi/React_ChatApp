@@ -39,7 +39,7 @@ const firstLetter = upperCaseName?.charAt(0);
    
   return (
     <div className="navbar">
-      <span className="logo">Pvt. Chat</span>
+      <span className="logo">React Chat</span>
       <div className="user">
         <div className="details" >
           {image ? <img src={image} alt=""  /> : <div className="letter">{firstLetter}</div>}

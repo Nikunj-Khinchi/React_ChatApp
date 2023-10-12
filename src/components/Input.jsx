@@ -135,18 +135,10 @@ const Input = () => {
           });
         }
       );
-
-
-
     }
-
-
-    
       // else we send only text    
     else {
     
-    
-      // console.log(time);
       // updates element in the array field using the arrayUnion() function
       await updateDoc(doc(db, "chats", data.chatId), {
         messages: arrayUnion({
@@ -186,16 +178,12 @@ const Input = () => {
   const handelkey = (e) => {
    
     e.code === "Enter" && handelSend();
-    // setText("");  
-    // setImage(null);
-    // setVideo(null);
+ 
   };
 
- 
-  
-  // console.log(`Current time is: ${currentHour}:${currentMinute}`);
+
   return (
-  // <div>
+
   <div className="input">
 
    {view &&  <div className="inner">
@@ -233,7 +221,7 @@ const Input = () => {
       </div>
     </div>}
   </div>
-  // </div>
+
  
   );
 };
