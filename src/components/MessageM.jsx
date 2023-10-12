@@ -4,7 +4,7 @@ import { AuthContext } from "../context/AuthContext";
 
 const MessageM = ({ messages }) => {
   // here we show the messages
-  console.log(messages);
+  // console.log(messages);
   const { currentUser } = useContext(AuthContext);
   const { data } = useContext(ChatContext);
 
@@ -14,7 +14,7 @@ const MessageM = ({ messages }) => {
   useEffect(() => {
     messageRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
-console.log(messages);
+// console.log(messages);
 
   return (
     <div
